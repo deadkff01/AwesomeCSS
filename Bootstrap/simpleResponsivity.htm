@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset=utf-8 />
+<title>index</title>
+<meta name="viewport" content="width=device-width">
+
+</head>
+  <style>
+  
+body {
+ font-family: sans-serif; 
+}
+div.large, div.small {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+}
+div.large {
+  background: #E51400;
+  width: 79.777777%; 
+  padding-bottom: 60%;
+  float: left;
+  position: relative;
+}
+
+div.small {
+  width: 19.333333%;
+  padding-bottom: 19.333333%;
+  margin-bottom: 1%;
+  display: block;
+  background: #000;
+  float: right;
+  position:relative;
+  background: #1BA1E2;
+  
+	}
+	div.small:nth-child(3){
+	
+	background: #0F5E8C;
+
+}
+
+
+div.small div, div.large div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+}
+
+div.top, div.bottom {
+  width: 75%;
+  overflow: hidden;
+  margin: 0 auto 1%;
+}
+
+div.bottom div.large {
+  background: #00ABA9;
+}
+
+div.bottom div.small {
+  float: left;
+  background: #929597;
+
+}
+div.bottom div.small:nth-child(2){
+background: #0F5E8C;
+}
+
+div.bottom div.large {
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+ div.top, div.bottom {
+   width: 98%; 
+  }
+}
+@media screen and (max-width: 600px) {
+  div.large {
+   width: 100%; 
+  }
+  div.small {
+    width: 32%;
+    float: left;
+    padding-bottom: 32%;
+    margin-right: 2%;
+    margin-top: 2%;
+   display:inline-block;
+  }
+  div.small:last-child{
+     margin-right: 0;
+  }
+}
+
+  
+  </style>
+<body>
+
+<div class="top">
+  <div class="large">
+    <div>hey</div>
+  </div>
+  <div class="small">
+    <div>hey</div>
+  </div>
+   <div class="small">
+     <div>hey</div>
+  </div>
+   <div class="small">
+     <div>hey</div>
+  </div>
+</div>
+
+
+<div class="bottom">
+  <div class="large">
+    <div>hey</div>
+  </div>
+  <div class="small">
+    <div>hey</div>
+  </div>
+   <div class="small">
+     <div>hey</div>
+  </div>
+   <div class="small">
+     <div>hey</div>
+  </div>
+</div>
+
+   </body>
+</html>
